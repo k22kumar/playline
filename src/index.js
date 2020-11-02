@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Normalize from "./globalStyles/normalize";
+import GlobalStyles from "./globalStyles/globalStyles";
 
 ReactDOM.render(
   <React.StrictMode>
+    <Normalize/>
+    <GlobalStyles/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
