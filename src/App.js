@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
-import './App.css';
+import Normalize from "./globalStyles/normalize";
+import GlobalStyles from "./globalStyles/globalStyles";
 import Header from './components/Header.js';
 import Main from "./components/Main.js";
 import Footer from "./components/Footer.js";
@@ -7,9 +8,11 @@ import Footer from "./components/Footer.js";
 const App = () => {
   return (
     <Fragment className="App">
-      <Header/>
-      <Main/>
-      <Footer/>
+      <Normalize />
+      <GlobalStyles />
+      <Header />
+      <Main />
+      <Footer />
     </Fragment>
   );
 }
