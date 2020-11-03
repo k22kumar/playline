@@ -32,6 +32,9 @@ body {
     src: url(${SFProDisplayBold}) format('woff');
 }
 
+h1, h2, h3 {
+   text-transform: uppercase;
+}
 
 h1, h2 {
    font-family: morganposteravecbold;
@@ -39,6 +42,7 @@ h1, h2 {
 
 h3 {
    font-family: "SFProDisplayBold", Helvetica, Arial, sans-serif;
+   color: #686868;
 }
 
 p, a {

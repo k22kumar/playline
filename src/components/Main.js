@@ -21,11 +21,11 @@ const Main = () => {
   return (
     <StyledMain>
         <Progress/>
-        <StyledLine/>
+        <StyledLine weight={'thick'}/>
         <MainTitles/>
         <PlayerInfo/>
         <UserAction/>
-        <StyledLine/>
+        <StyledLine weight={'thin'}/>
         <AppDownload/>
     </StyledMain>
   );

@@ -1,19 +1,29 @@
-import styled from "styled-components";
 import styled, { css } from "styled-components";
-import logo from "../assets/logo/logo@1x.png";
-import wrapper from "./styles/wrapper";
 
-const StyledHR = styled.hr`
-  ${({ weight })} => {
-      
-  }
+const thick = `
+  width: 70%;
+  border: 0;
+  margin:0;
+  height: 4px;
+  background-color: #DDDDDD;
 `;
 
-const StyledLine = () => {
+const thin = `
+  width: 60%;
+  border: 0;
+  margin:0;
+  height: 4px;
+  background-color: #F0F0F0;
+`;
+
+const StyledHR = styled.hr`
+  ${({ weight }) => weight === 'thick' && css`${thick}`}
+  ${({ weight }) => weight === 'thin' && css`${thin}`}
+`;
+
+const StyledLine = ({ weight }) => {
   return (
-    <StyledHR>
-      <img src={logo} alt="PlayLine Sports Lotto Logo" />
-    </StyledHR>
+    <StyledHR weight={weight}/>
   );
 };
 
