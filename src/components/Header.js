@@ -7,12 +7,19 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
+
+        & div{
+    height: 142px;
+
+        }
 `;
 
 const Header = () => {
     return (
         <StyledHeader>
-            <img src= {logo} alt='PlayLine Sports Lotto Logo'/>
+            <div>
+                <img src= {logo} alt='PlayLine Sports Lotto Logo'/>
+            </div>
         </StyledHeader>
     )
 }

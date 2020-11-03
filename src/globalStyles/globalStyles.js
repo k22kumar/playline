@@ -51,6 +51,7 @@ p, a {
 
 ul {
    list-style: none;
+   padding: 0;
 }
 
 button {
@@ -61,6 +62,11 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+img {
+   display: block;
+   max-width: 100%;
 }
 
 `;

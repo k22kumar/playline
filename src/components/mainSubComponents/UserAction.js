@@ -7,10 +7,19 @@ const StyledDiv = styled.div`
   justify-content: center;
   align-items: center;
 
-  & button {
+  & button,
+  div {
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+  }
+
+  & button {
+    border-radius: 40px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   }
 `;
 
