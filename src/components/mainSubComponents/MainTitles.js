@@ -15,6 +15,9 @@ const StyledDiv = styled.div`
     & p {
         color: #686868;
     }
+    & hr {
+        width: 70%
+    }
 `;
 
 const MainTitle = () => {
@@ -26,6 +29,7 @@ const MainTitle = () => {
         Pro Tip: You can manage your PlayLine's until they go live in the
         Upcoming area
       </p>
+      <hr/>
     </StyledDiv>
   );
 };

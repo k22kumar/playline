@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import wrapper from "./styles/wrapper";
 import Progress from './mainSubComponents/Progress';
 import MainTitles from "./mainSubComponents/MainTitles";
-import wrapper from "./styles/wrapper";
+import PlayerInfo from "./mainSubComponents/PlayerInfo";
+import UserAction from "./mainSubComponents/UserAction";
+import AppDownload from "./mainSubComponents/AppDownload";
+import StyledLine from "./mainSubComponents/StyledLine";
 
 const StyledMain = styled.main`
   ${wrapper}
@@ -17,7 +21,12 @@ const Main = () => {
   return (
     <StyledMain>
         <Progress/>
+        <StyledLine/>
         <MainTitles/>
+        <PlayerInfo/>
+        <UserAction/>
+        <StyledLine/>
+        <AppDownload/>
     </StyledMain>
   );
 };

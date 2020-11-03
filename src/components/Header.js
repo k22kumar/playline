@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import logo from '../assets/logo/logo@1x.png';
 import wrapper from "./styles/wrapper";
 

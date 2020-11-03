@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import MorganPosterAvecFont from '../fonts/morganposteravec_bold-webfont.woff';
-import SFProDisplayLight from '../fonts/70c38766a71f8f7f0a477605da15fcd3.woff';
+import SFProDisplayLight from '../fonts/SFProDisplayLight.woff';
+import SFProDisplayBold from "../fonts/SF Pro Display Bold.woff";
+
 
 const GlobalStyles = createGlobalStyle`
 html {
@@ -13,7 +15,7 @@ body {
 
 @font-face {
     font-family: 'SFProDisplay';
-    src: url(${SFProDisplayLight}) format('wotf');
+    src: url(${SFProDisplayLight}) format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -25,14 +27,38 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'SFProDisplayBold';
+    src: url(${SFProDisplayBold}) format('woff');
+}
+
 
 h1, h2 {
    font-family: morganposteravecbold;
 }
 
-p {
+h3 {
+   font-family: "SFProDisplayBold", Helvetica, Arial, sans-serif;
+}
+
+p, a {
    font-family: SFProDisplay;
 }
+
+ul {
+   list-style: none;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 `;
 
 export default GlobalStyles;

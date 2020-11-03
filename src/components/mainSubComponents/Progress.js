@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import progress from "../../assets/icons/progress@2x.png";
 
 const StyledDiv = styled.div`
