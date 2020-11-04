@@ -32,16 +32,16 @@ const StyledUL = styled.ul`
     top: 0;
     left: 50%;
     margin-left: -33px;
-      img{
-        position: absolute;
-        top: 0;
-        left: 50%;
-        margin-left: -50%;
-      }
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -50%;
+    }
   }
 
-  
-  & .pts, .lastName {
+  & .pts,
+  .lastName {
     font-size: 1.2rem;
     text-transform: uppercase;
   }
@@ -76,9 +76,9 @@ const StyledUL = styled.ul`
       font-size: 1.6rem;
       font-family: morganposteravecbold;
       background-color: #ffffff;
+      color: #4a4a4a;
     }
   }
-
 `;
 
 // playercards and pts ring bgc=#F0F0F0
