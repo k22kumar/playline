@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../styles/devices";
 
 const StyledLI = styled.li`
   width: 56px;
@@ -17,7 +18,7 @@ const StyledLI = styled.li`
     left: 50%;
     margin-left: -33px;
     /* reverses the zindex so that the players will overlap to their right */
-    z-index: ${({ index }) => index * (-1) + 7};
+    z-index: ${({ index }) => index * -1 + 7};
   }
 
   & .pts,
@@ -59,21 +60,49 @@ const StyledLI = styled.li`
       color: #4a4a4a;
     }
   }
+
+  @media ${devices.tablets} {
+    width: 48px;
+    & .imgContainer {
+      width: 56px;
+      height: 56px;
+      margin-left: -28px;
+    }
+
+    & .pts,
+    .lastName {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media ${devices.mobileL} {
+    width: 43px;
+    & .imgContainer {
+      width: 50px;
+      height: 50px;
+      margin-left: -25px;
+    }
+
+    & .pts,
+    .lastName {
+      font-size: 1rem;
+    }
+  }
 `;
 
-const PlayerSingle = ( { index, last_name, points, headshot} ) => {
-    return (
-      <StyledLI index={index}>
-        <div className={"imgContainer"}>
-          <img src={headshot} alt={`Headshot of ${last_name}`}/>
-        </div>
-        <p className={"lastName"}>{last_name}</p>
-        <div className={"pointsContainer"}>
-          <p>{points}</p>
-        </div>
-        <p className={"pts"}>pts</p>
-      </StyledLI>
-    );
-}
+const PlayerSingle = ({ index, last_name, points, headshot }) => {
+  return (
+    <StyledLI index={index}>
+      <div className={"imgContainer"}>
+        <img src={headshot} alt={`Headshot of ${last_name}`} />
+      </div>
+      <p className={"lastName"}>{last_name}</p>
+      <div className={"pointsContainer"}>
+        <p>{points}</p>
+      </div>
+      <p className={"pts"}>pts</p>
+    </StyledLI>
+  );
+};
 
 export default PlayerSingle;

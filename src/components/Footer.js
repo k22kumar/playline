@@ -36,7 +36,6 @@ const StyledFooter = styled.footer`
 `;
 
 const Footer = () => {
-  console.log(devices);
   return (
     <StyledFooter>
       <a href="https://www.playline.com/about/">About</a>
