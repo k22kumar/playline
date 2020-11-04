@@ -5,7 +5,8 @@ const StyledDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 250px;
+  margin: 20px;
 `;
 
 const Progress = () => {
