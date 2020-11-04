@@ -49,6 +49,10 @@ p, a {
    font-family: SFProDisplay;
 }
 
+p {
+   margin: 0;
+}
+
 ul {
    list-style: none;
    padding: 0;
