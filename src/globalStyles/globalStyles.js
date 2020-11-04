@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import MorganPosterAvecFont from '../fonts/morganposteravec_bold-webfont.woff';
 import SFProDisplayLight from '../fonts/SFProDisplayLight.woff';
 import SFProDisplayBold from "../fonts/SF Pro Display Bold.woff";
+import { devices } from '../components/styles/devices';
 
 
 const GlobalStyles = createGlobalStyle`
@@ -77,6 +78,12 @@ img {
    display: block;
    max-width: 100%;
 }
+
+@media ${devices.tablets} {
+      h3 {
+         font-size: 1.2rem;
+      }
+    }
 
 `;
 

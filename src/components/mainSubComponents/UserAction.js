@@ -1,15 +1,17 @@
 import styled from "styled-components";
 import notify from "../../assets/icons/notify-me@2x.png";
 import deposit from "../../assets/icons/money-bag@2x.png";
+import { devices } from "../styles/devices";
 
 const StyledDiv = styled.div`
-  width: 60%;
+  width: 280px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   margin: 20px;
 
-  & button, div {
+  & button,
+  div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +30,10 @@ const StyledDiv = styled.div`
       height: 20px;
       margin-right: 15px;
     }
-    
+
+    @media ${devices.tablets} {
+      
+    }
   }
 `;
 

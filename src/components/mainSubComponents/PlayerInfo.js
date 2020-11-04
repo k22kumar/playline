@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import PlayerSingle from './PlayerSingle';
+import { devices } from "../styles/devices";
 
 import gordon from "../../assets/headshots/Aaron Gordon -PLP59D7092156491v2.png";
 import davis from "../../assets/headshots/Anthony-Davis-PLP59D70938C0B3Ev2.png";
@@ -15,7 +16,10 @@ const StyledUL = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+
+   @media ${devices.tablets} {
+     width: 370px;
+   }
 `;
 
 const PlayerInfo = () => {
