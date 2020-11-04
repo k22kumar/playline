@@ -22,7 +22,6 @@ const Main = () => {
     <StyledMain>
         <Progress/>
         <MainTitles/>
-        <StyledLine weight={'thick'}/>
         <PlayerInfo/>
         <UserAction/>
         <StyledLine weight={'thin'}/>

@@ -7,6 +7,7 @@ const StyledDiv = styled.div`
   align-items: center;
   width: 250px;
   margin: 20px;
+  margin-left: 30px;
 `;
 
 const Progress = () => {
