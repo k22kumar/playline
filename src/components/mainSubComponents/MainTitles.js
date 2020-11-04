@@ -18,7 +18,8 @@ const StyledDiv = styled.div`
     }
     & p {
       margin-top: 10px;
-        color: #686868;
+      color: #686868;
+      font-size: 1.15rem;
     }
 `;
 
