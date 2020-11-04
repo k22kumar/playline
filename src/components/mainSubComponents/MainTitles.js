@@ -7,13 +7,11 @@ const StyledDiv = styled.div`
   flex-direction: column;
     & h1 {
         font-size: 3rem;
-        margin: 0;
         color: #464646;
         text-transform: uppercase;
     }
     & h2 {
         font-size: 1.73rem;
-        margin: 0;
         text-transform: uppercase;
         color: #737373;
         margin-bottom: 10px;

@@ -13,10 +13,10 @@ const StyledUL = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   & li {
-    width: 60px;
-    height: 145px;
+    width: 56px;
     position: relative;
   }
 
@@ -52,7 +52,7 @@ const StyledUL = styled.ul`
 
   & .lastName {
     margin: 8px 0;
-    margin-top: 66px;
+    margin-top: 74px;
   }
 
   & .pointsContainer,
