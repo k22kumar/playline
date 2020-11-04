@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StyledLine from './StyledLine';
+import StyledLine from "./StyledLine";
 import { devices } from "../styles/devices";
 
 const StyledDiv = styled.div`
@@ -44,7 +44,7 @@ const MainTitle = () => {
     <StyledDiv>
       <h1>Your PlayLine is Set!</h1>
       <h2>Come back @ 7:30pm to track it live!</h2>
-        <StyledLine weight={'thick'}/>
+      <StyledLine weight={"thick"} />
       <p>
         Pro Tip: You can manage your PlayLine's until they go live in the
         Upcoming area

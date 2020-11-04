@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import wrapper from "./styles/wrapper";
-import Progress from './mainSubComponents/Progress';
+import Progress from "./mainSubComponents/Progress";
 import MainTitles from "./mainSubComponents/MainTitles";
 import PlayerInfo from "./mainSubComponents/PlayerInfo";
 import UserAction from "./mainSubComponents/UserAction";
@@ -20,12 +20,12 @@ const StyledMain = styled.main`
 const Main = () => {
   return (
     <StyledMain>
-        <Progress/>
-        <MainTitles/>
-        <PlayerInfo/>
-        <UserAction/>
-        <StyledLine weight={'thin'}/>
-        <AppDownload/>
+      <Progress />
+      <MainTitles />
+      <PlayerInfo />
+      <UserAction />
+      <StyledLine weight={"thin"} />
+      <AppDownload />
     </StyledMain>
   );
 };

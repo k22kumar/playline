@@ -12,17 +12,23 @@ const thin = `
   background-color: #F0F0F0;
 `;
 
-const StyledHR = styled.hr` 
+const StyledHR = styled.hr`
   margin: 0 auto;
   border: 0;
-  ${({ weight }) => weight === 'thick' && css`${thick}`}
-  ${({ weight }) => weight === 'thin' && css`${thin}`}
+  ${({ weight }) =>
+    weight === "thick" &&
+    css`
+      ${thick}
+    `}
+  ${({ weight }) =>
+    weight === "thin" &&
+    css`
+      ${thin}
+    `}
 `;
 
 const StyledLine = ({ weight }) => {
-  return (
-    <StyledHR weight={weight}/>
-  );
+  return <StyledHR weight={weight} />;
 };
 
 export default StyledLine;

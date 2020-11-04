@@ -17,7 +17,8 @@ const StyledDiv = styled.div`
     margin-bottom: 30px;
   }
 
-  & div, button {
+  & div,
+  button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,10 +43,16 @@ const AppDownload = () => {
     <StyledDiv>
       <h3>Download the app</h3>
       <div>
-        <button className={'appleStore'} aria-label={'Click to download from the Apple Store'}>
+        <button
+          className={"appleStore"}
+          aria-label={"Click to download from the Apple Store"}
+        >
           <img src={appleStore} alt="Available on the Apple Store" />
         </button>
-        <button className={'playStore'} aria-label={'Click to download from the Google Play Store'}>
+        <button
+          className={"playStore"}
+          aria-label={"Click to download from the Google Play Store"}
+        >
           <img src={playStore} alt="Get it on Google Play" />
         </button>
       </div>
