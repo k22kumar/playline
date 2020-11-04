@@ -1,26 +1,42 @@
 import styled from "styled-components";
 import StyledLine from './StyledLine';
+import { devices } from "../styles/devices";
 
 const StyledDiv = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  & h1 {
+    font-size: 3rem;
+    color: #464646;
+    text-transform: uppercase;
+  }
+  & h2 {
+    font-size: 1.73rem;
+    text-transform: uppercase;
+    color: #737373;
+    margin-bottom: 10px;
+  }
+  & p {
+    margin-top: 10px;
+    color: #686868;
+    font-size: 1.15rem;
+  }
+
+  @media ${devices.mobileL} {
     & h1 {
-        font-size: 3rem;
-        color: #464646;
-        text-transform: uppercase;
+      font-size: 2.5rem;
     }
     & h2 {
-        font-size: 1.73rem;
-        text-transform: uppercase;
-        color: #737373;
-        margin-bottom: 10px;
+      font-size: 1.44rem;
     }
     & p {
+      font-size: 1rem;
+      width: 70%;
+      margin: 0 auto;
       margin-top: 10px;
-      color: #686868;
-      font-size: 1.15rem;
     }
+  }
 `;
 
 const MainTitle = () => {

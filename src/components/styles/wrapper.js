@@ -11,7 +11,7 @@ const wrapper = `
     min-width: 400px;
   }
   @media ${devices.mobileL} {
-    min-width: 350px;
+    min-width: 325px;
   }
   @media ${devices.mobileS} {
     min-width: 300px;
