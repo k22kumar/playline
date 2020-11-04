@@ -7,7 +7,7 @@ import Footer from "./components/Footer.js";
 
 const App = () => {
   return (
-    <Fragment className="App">
+    <Fragment>
       <Normalize />
       <GlobalStyles />
       <Header />

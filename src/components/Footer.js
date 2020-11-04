@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import wrapper from './styles/wrapper';
 
 const StyledFooter = styled.footer`
