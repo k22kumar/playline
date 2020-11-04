@@ -3,12 +3,18 @@ import wrapper from './styles/wrapper';
 
 const StyledFooter = styled.footer`
   ${wrapper}
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
   
   & p, a {
-    color: #a1a1a1
+    font-size: 1.4rem;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    margin: 0 3px;
     }
 `;
 

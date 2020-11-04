@@ -50,6 +50,10 @@ p, a {
    font-family: SFProDisplay;
 }
 
+a {
+   text-decoration: none;
+}
+
 h1, h2, h3, p {
    margin: 0;
 }
