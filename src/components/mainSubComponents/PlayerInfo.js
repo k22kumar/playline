@@ -15,7 +15,6 @@ const StyledUL = styled.ul`
   align-items: center;
 
   & li {
-    z-index:6;
     width: 60px;
     height: 145px;
     position: relative;
