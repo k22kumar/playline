@@ -41,6 +41,7 @@ h1, h2 {
 }
 
 h3 {
+   font-size: 1.4rem;
    font-family: "SFProDisplayBold", Helvetica, Arial, sans-serif;
    color: #686868;
 }
@@ -49,7 +50,7 @@ p, a {
    font-family: SFProDisplay;
 }
 
-p {
+h1, h2, h3, p {
    margin: 0;
 }
 
