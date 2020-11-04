@@ -6,6 +6,10 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  & p, a {
+    color: #a1a1a1
+    }
 `;
 
 const Footer = () => {
