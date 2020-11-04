@@ -7,6 +7,7 @@ import { devices } from "../components/styles/devices";
 const GlobalStyles = createGlobalStyle`
 html {
    font-size: 62.5%; 
+   overflow-x: hidden;
 }
 
 body {
