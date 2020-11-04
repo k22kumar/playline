@@ -22,8 +22,8 @@ const StyledFooter = styled.footer`
   }
 
   @media ${devices.tablet} {
-    & div {
       min-width: 270px;
+    & div {
       margin-top: 30px;
       margin-bottom: 40px;
       flex-wrap: wrap;
