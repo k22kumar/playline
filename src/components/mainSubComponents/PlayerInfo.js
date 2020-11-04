@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import PlayerSingle from './PlayerSingle';
+import PlayerSingle from "./PlayerSingle";
 import { devices } from "../styles/devices";
 
 import gordon from "../../assets/headshots/Aaron Gordon -PLP59D7092156491v2.png";
@@ -17,9 +17,9 @@ const StyledUL = styled.ul`
   justify-content: center;
   align-items: center;
 
-   @media ${devices.tablets} {
-     width: 370px;
-   }
+  @media ${devices.tablets} {
+    width: 370px;
+  }
 `;
 
 const PlayerInfo = () => {
@@ -71,7 +71,13 @@ const PlayerInfo = () => {
     const { last_name, points } = player;
     const headshot = mapLastNameToHeadShot(last_name);
     return (
-      <PlayerSingle key={index} index={index} last_name={last_name} points={points} headshot={headshot}/>
+      <PlayerSingle
+        key={index}
+        index={index}
+        last_name={last_name}
+        points={points}
+        headshot={headshot}
+      />
     );
   });
 

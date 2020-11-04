@@ -1,9 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import MorganPosterAvecFont from '../fonts/morganposteravec_bold-webfont.woff';
-import SFProDisplayLight from '../fonts/SFProDisplayLight.woff';
+import MorganPosterAvecFont from "../fonts/morganposteravec_bold-webfont.woff";
+import SFProDisplayLight from "../fonts/SFProDisplayLight.woff";
 import SFProDisplayBold from "../fonts/SF Pro Display Bold.woff";
-import { devices } from '../components/styles/devices';
-
+import { devices } from "../components/styles/devices";
 
 const GlobalStyles = createGlobalStyle`
 html {

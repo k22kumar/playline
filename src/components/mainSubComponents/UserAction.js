@@ -30,10 +30,6 @@ const StyledDiv = styled.div`
       height: 20px;
       margin-right: 15px;
     }
-
-    @media ${devices.tablets} {
-      
-    }
   }
 `;
 
