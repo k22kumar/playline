@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import wrapper from './styles/wrapper';
+import { devices } from './styles/devices';
 
 const StyledFooter = styled.footer`
   ${wrapper}
@@ -9,16 +10,33 @@ const StyledFooter = styled.footer`
   align-items: center;
   margin-top: 60px;
   margin-bottom: 80px;
-  
-  & p, a {
+
+  & p,
+  a {
     font-size: 1.4rem;
     color: #a1a1a1;
     text-transform: uppercase;
-    margin: 0 3px;
+    margin: 5px 3px;
+  }
+
+  @media ${devices.tablet} {
+    min-width: 470px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    & p,
+    a {
+      font-size: 1.2rem;
     }
+  }
+
+  @media ${devices.mobileL} {
+    min-width: 300px;
+  }
 `;
 
 const Footer = () => {
+  console.log(devices);
   return (
     <StyledFooter>
       <a href="https://www.playline.com/about/">About</a>
